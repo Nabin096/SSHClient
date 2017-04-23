@@ -10,7 +10,7 @@ RUN apt-get update && \
     apt-get -y install gcc python python-pip
 RUN pip install -r requirements.txt
 
-EXPOSE 22
+EXPOSE 80
 ENV NAME Sshtest
 # Run app.py when the container launches
 CMD ["python", "app.py"]
